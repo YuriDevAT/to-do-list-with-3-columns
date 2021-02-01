@@ -1,4 +1,4 @@
-[![Netlify Status](https://to-do-list-with-3-columns.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f9a7f8d3-58ca-44ed-a038-ae8d2efd31a5/deploy-status)](https://to-do-list-with-3-columns.netlify.app/)
 
 # Getting Started with Create React App
 
