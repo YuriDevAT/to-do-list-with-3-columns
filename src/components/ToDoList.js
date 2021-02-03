@@ -1,19 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 const ToDoList = () => {
-    const [task, setTask] = useState('');
-
-
-const handlerChange = e => {
-}
 
     return (
-        <div>
-            <form>
-                <label for="task"></label>
-                <input type="text" />
-                <button type="submit" onClick={handlerChange}>Add Task</button> 
-            </form>
+        <div className="to-do-list">
+            <ul></ul>
         </div>
     )
 }
