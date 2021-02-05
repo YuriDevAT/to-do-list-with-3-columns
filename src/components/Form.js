@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Form = () => {
-    const [input, setInput] = useState('');
-    const [todos, setTodos] = useState('');
+const Form = ({ input, setInput, todos, setTodos }) => {   
 
     const inputHandler = (e) => {
         console.log(e.target.value);
@@ -21,7 +19,7 @@ const Form = () => {
             <form className="form">
                 <label htmlFor="form">
                 <input type="text" value={input} onChange={inputHandler} />
-                <button type="submit" onClick={submitHandler} >+</button>     
+                <button type="submit" onClick={submitHandler} ><i className="bi bi-plus"></i></button>     
                 </label>           
                 <select>
                     <option>All</option>
@@ -29,7 +27,7 @@ const Form = () => {
                     <option>Undone</option>
                 </select>
             </form>
-    )
-}
+    );
+};
 
 export default Form;
