@@ -6,6 +6,6 @@ This project will contain three cards or boxes, where the `planned tasks`, `in-p
 
 ![mockup_Figma](https://github.com/YuriDevAT/to-do-list-with-3-columns/blob/master/mockup-smartToDo.PNG)
 
-You can take a look on the progress under the following link:
+<!--You can take a look on the progress under the following link:-->
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f9a7f8d3-58ca-44ed-a038-ae8d2efd31a5/deploy-status)](https://to-do-list-with-3-columns.netlify.app/)
+<!--[![Netlify Status](https://api.netlify.com/api/v1/badges/f9a7f8d3-58ca-44ed-a038-ae8d2efd31a5/deploy-status)](https://to-do-list-with-3-columns.netlify.app/)-->
