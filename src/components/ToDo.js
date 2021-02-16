@@ -1,12 +1,12 @@
 import React from 'react';
 
-const ToDo = ({ text }) => {    
+const ToDo = ({ text, todos, setTodos }) => {    
 
     return (
         <div>
             <li>{text}</li>
-            <button><i className="bi bi-check2-square"></i></button>
-            <button><i className="bi bi-trash"></i></button>
+            <button>Check</button>
+            <button>X</button>
         </div>
     );
 };
