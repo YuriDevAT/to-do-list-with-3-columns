@@ -15,9 +15,10 @@ const Form = ({ input, setInput, todos, setTodos }) => {
     }
     
     return (
-            <form className="form">
+            <form className="bg-green-400 h-full mt-4">
                 <label htmlFor="form">
-                <input type="text" value={input} onChange={inputHandler} />
+                <input className="w-1/2 mr-2 py-3 "
+                type="text" value={input} onChange={inputHandler} />
                 <button type="submit" onClick={submitHandler} ><i className="bi bi-plus"></i></button>     
                 </label>           
                 <select>

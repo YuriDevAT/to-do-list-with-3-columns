@@ -7,13 +7,13 @@ const ToDoList = ({ todos, setTodos }) => {
     return (
         <div>
             <ul>
-                {todos.map(todo => (
+                {/* {todos.map(todo => (
                     <ToDo
                     setTodos={setTodos}
                     todos={todos} 
                     key={todo.id} 
                     text={todo.text} />
-                ))}
+                ))} */}
             </ul>
         </div>
     );

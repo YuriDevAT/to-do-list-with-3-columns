@@ -7,11 +7,11 @@ function App() {
   const [todos, setTodos] = useState('');
 
   return (
-    <div className="App">
-      <header>
-        <h1>To Do List</h1>          
+    <div className="bg-blue-500 h-screen flex flex-col">
+      <header className="w-full bg-blue-800">
+        <h1 className="capitalize text-white py-5 text-5xl text-center text-color-gray-200 font-bold">To Do List</h1>          
       </header>
-      <Form 
+      <Form
       input={input}
       setInput={setInput}
       todos={todos}
