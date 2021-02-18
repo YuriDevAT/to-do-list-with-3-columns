@@ -1,23 +1,63 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Form from './components/Form';
 import ToDoList from './components/ToDoList';
 
 function App() {
   const [input, setInput] = useState('');
-  const [todos, setTodos] = useState('');
+  const [todos, setTodos] = useState([]);
+  const [status, setStatus] = useState('all');
+  const [filtered, setFiltered] = useState([]);
+
+  useEffect(() => {
+    filterHandler();
+    saveLocalTodos();
+    getLocalTodos();
+  }, [todos, status]);
+
+  const filterHandler = () => {
+    switch(status){
+      case 'completed':
+        setFiltered(todos.filter(todo => todo.completed === true))
+        break;
+      case 'uncompleted':
+        setFiltered(todos.filter(todo => todo.completed === false))
+        break;
+      default:
+        setFiltered(todos);
+        break;
+    }
+  }
+
+  const saveLocalTodos = () => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }
+
+  const getLocalTodos = () => {
+    if (localStorage.getItem('todos') === null) {
+      localStorage.setItem('todos', JSON.stringify([]));
+    } else {
+      let todoLocal = JSON.parse(localStorage.getItem('todos'));
+      setTodos(todoLocal);
+    }
+  }
 
   return (
-    <div className="bg-blue-500 h-screen flex flex-col">
-      <header className="w-full bg-blue-800">
-        <h1 className="capitalize text-white py-5 text-5xl text-center text-color-gray-200 font-bold">To Do List</h1>          
+    <div className="">
+      <header className="">
+        <h1 className="">To Do List</h1>          
       </header>
       <Form
       input={input}
       setInput={setInput}
       todos={todos}
       setTodos={setTodos}
+      setStatus={setStatus}
       />
-     <ToDoList setTodos={setTodos} todos={todos} />
+     <ToDoList 
+     setTodos={setTodos} 
+     todos={todos}     
+     filtered={filtered}
+     />
     </div>
   );
 }

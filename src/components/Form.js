@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Form = ({ input, setInput, todos, setTodos }) => {   
+const Form = ({ input, setInput, todos, setTodos, setStatus }) => {   
 
     const inputHandler = (e) => {
         setInput(e.target.value);
@@ -13,15 +13,19 @@ const Form = ({ input, setInput, todos, setTodos }) => {
         ]);
         setInput('');
     }
+
+    const statusHandler = (e) => {
+        setStatus(e.target.value);
+    }
     
     return (
-            <form className="bg-green-400 h-full mt-4">
-                <label htmlFor="form">
-                <input className="w-1/2 mr-2 py-3 "
+            <form className="">
+                <label htmlFor="">
+                <input className=""
                 type="text" value={input} onChange={inputHandler} />
-                <button type="submit" onClick={submitHandler} ><i className="bi bi-plus"></i></button>     
+                <button type="submit" onClick={submitHandler} className="">+</button>     
                 </label>           
-                <select>
+                <select onChange={statusHandler}>
                     <option>All</option>
                     <option>Done</option>
                     <option>Undone</option>
