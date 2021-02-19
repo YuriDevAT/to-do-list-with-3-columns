@@ -20,15 +20,16 @@ const Form = ({ input, setInput, todos, setTodos, setStatus }) => {
     
     return (
             <form className="">
-                <label htmlFor="">
-                <input className=""
-                type="text" value={input} onChange={inputHandler} />
-                <button type="submit" onClick={submitHandler} className="">+</button>     
-                </label>           
+                <input
+                className=""
+                type="text"
+                value={input}
+                onChange={inputHandler} />
+                <button type="submit" onClick={submitHandler} className=""><i class="fas fa-plus-square"></i></button>        
                 <select onChange={statusHandler}>
-                    <option>All</option>
-                    <option>Done</option>
-                    <option>Undone</option>
+                    <option>all</option>
+                    <option>completed</option>
+                    <option>uncompleted</option>
                 </select>
             </form>
     );

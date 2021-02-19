@@ -8,14 +8,17 @@ function App() {
   const [status, setStatus] = useState('all');
   const [filtered, setFiltered] = useState([]);
 
-  useEffect(() => {
+  useEffect(() => {    
+    getLocalTodos();
+  }, []);
+
+  useEffect(() => {    
     filterHandler();
     saveLocalTodos();
-    getLocalTodos();
   }, [todos, status]);
 
   const filterHandler = () => {
-    switch(status){
+    switch (status) {
       case 'completed':
         setFiltered(todos.filter(todo => todo.completed === true))
         break;
