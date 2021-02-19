@@ -47,7 +47,8 @@ function App() {
   return (
     <div className="">
       <header className="">
-        <h1 className="">To Do List</h1>          
+        <h1 className="">React To Do List</h1>  
+        <h2 className="">styled with TailwindCSS</h2>        
       </header>
       <Form
       input={input}
