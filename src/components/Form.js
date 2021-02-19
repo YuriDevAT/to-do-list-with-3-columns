@@ -19,23 +19,24 @@ const Form = ({ input, setInput, todos, setTodos, setStatus }) => {
     }
     
     return (
-            <form className="py-8 bg-red-500">
+            <form className="py-8 flex justify-center">
                 <input
-                className="py-3 border border-gray-400 rounded-lg"
+                className="py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-blue-800"
                 type="text"
                 value={input}
-                onChange={inputHandler} />
+                onChange={inputHandler}
+                placeholder="Add to do.." />
                 <button 
                 type="submit"
                 onClick={submitHandler}
                 className="mr-2 bg-blue-500">
                     <i 
-                    className="fas fa-plus-square text-white text-4xl">
+                    className="fas fa-plus-square text-white text-5xl hover:text-gray-900">
                     </i>
                 </button>        
                 <select
                 onChange={statusHandler}
-                className="py-3 border border-gray-400 rounded-lg">
+                className="py-3 border border-gray-400 rounded-lg ">
                     <option>all</option>
                     <option>completed</option>
                     <option>uncompleted</option>

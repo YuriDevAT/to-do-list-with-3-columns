@@ -18,10 +18,10 @@ const ToDo = ({ text, todo, todos, setTodos }) => {
     }    
 
     return (
-        <div className="bg-white-500 flex justify-center border">
-            <li className={`my-3 ${todo.completed ? "completed" : ''}`}>{text}</li>
-            <button onClick={completeHandler} className="mx-2"><i className="fas fa-check"></i></button>
-            <button onClick={deleteHandler} ><i className="fas fa-trash"></i></button>
+        <div className="bg-yellow-500 flex justify-start border rounded-lg mx-auto max-w-md mt-2">
+            <li className={`bg-gray-500 py-3 ml-2 flex-1 text-left ${todo.completed ? "completed" : ''}`}>{text}</li>
+            <button onClick={completeHandler} className="bg-blue-500 hover:bg-blue-700 jflex-initial px-5"><i className="fas fa-check"></i></button>
+            <button onClick={deleteHandler} className="bg-yellow-400 flex-initial px-5 hover:bg-yellow-600 "><i className="fas fa-trash"></i></button>
         </div>
     );
 };

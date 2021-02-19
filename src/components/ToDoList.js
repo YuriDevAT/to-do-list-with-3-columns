@@ -4,7 +4,7 @@ import ToDo from './ToDo';
 const ToDoList = ({ todos, setTodos, filtered }) => {    
 
     return (
-        <div className="bg-yellow-500">
+        <div className="mt-6">
             <ul>
                 {filtered.map((todo) => (
                     <ToDo

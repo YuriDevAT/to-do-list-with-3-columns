@@ -45,8 +45,8 @@ function App() {
   }
 
   return (
-    <div className="bg-blue-500 h-screen text-center">
-      <header className="bg-green-500 py-12 text-gray-100 font-sans">
+    <div className="bg-blue-500 h-screen text-center box-border">
+      <header className="py-12 text-gray-100 font-sans">
         <h1 className="text-6xl">React To Do List</h1>  
         <h2 className="text-xl mt-3">styled with TailwindCSS</h2>        
       </header>
