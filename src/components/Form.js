@@ -19,14 +19,23 @@ const Form = ({ input, setInput, todos, setTodos, setStatus }) => {
     }
     
     return (
-            <form className="">
+            <form className="py-8 bg-red-500">
                 <input
-                className=""
+                className="py-3 border border-gray-400 rounded-lg"
                 type="text"
                 value={input}
                 onChange={inputHandler} />
-                <button type="submit" onClick={submitHandler} className=""><i class="fas fa-plus-square"></i></button>        
-                <select onChange={statusHandler}>
+                <button 
+                type="submit"
+                onClick={submitHandler}
+                className="mr-2 bg-blue-500">
+                    <i 
+                    className="fas fa-plus-square text-white text-4xl">
+                    </i>
+                </button>        
+                <select
+                onChange={statusHandler}
+                className="py-3 border border-gray-400 rounded-lg">
                     <option>all</option>
                     <option>completed</option>
                     <option>uncompleted</option>
