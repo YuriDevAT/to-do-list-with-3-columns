@@ -19,9 +19,9 @@ const Form = ({ input, setInput, todos, setTodos, setStatus }) => {
     }
     
     return (
-            <form className="py-8 flex justify-center">
+            <form className="flex flex-col justify-center sm:flex-row max-w-md mx-auto px-2">
                 <input
-                className="py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-blue-800"
+                className="py-2 pl-2 border rounded-lg border-transparent focus:outline-none focus:ring-4 focus:ring-blue-700 focus:border-transparent shadow-md"
                 type="text"
                 value={input}
                 onChange={inputHandler}
@@ -29,14 +29,14 @@ const Form = ({ input, setInput, todos, setTodos, setStatus }) => {
                 <button 
                 type="submit"
                 onClick={submitHandler}
-                className="mr-2 bg-blue-500">
+                className="ml-1 mr-3 my-2 focus:outline-none">
                     <i 
-                    className="fas fa-plus-square text-white text-5xl hover:text-gray-900">
+                    className="fas fa-plus-square text-white text-5xl hover:text-blue-700">
                     </i>
                 </button>        
                 <select
                 onChange={statusHandler}
-                className="py-3 border border-gray-400 rounded-lg ">
+                className="py-2 pl-2 rounded-lg shadow-md cursor-pointer focus:outline-none">
                     <option>all</option>
                     <option>completed</option>
                     <option>uncompleted</option>
