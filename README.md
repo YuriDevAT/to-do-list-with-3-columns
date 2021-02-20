@@ -1,10 +1,11 @@
 # To-do-list
+##Desciption
 
-This project will contain three cards or boxes, where the `planned tasks`, `in-progress tasks`, and the `done tasks` will be displayed. Another useful feature will be a simple popup or modal to add a new task, and the button to delete the tasks if they are not necessary. For the design, a mockup will be created using `Figma`.
+This project let you add, mark as done and delete tasks. The tasks will be stored in your local storage, which means, after refreshing the page, the tasks are still in your list.
 
-## Mockup To Do List
+## Homescreen To Do List
 
-![mockup_Figma](https://github.com/YuriDevAT/to-do-list-with-3-columns/blob/master/mockup-smartToDo.PNG)
+![Home screen](https://github.com/YuriDevAT/to-do-list-with-3-columns/blob/master/final-app.png)
 
 <!--You can take a look on the progress under the following link:-->
 
