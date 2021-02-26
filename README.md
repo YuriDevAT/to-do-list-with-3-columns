@@ -1,5 +1,6 @@
 # To-do-list
-##Desciption
+
+## Description
 
 The to do list was created with reactjs and styled with TailwindCSS (mobile first).
 As a user, you can add tasks, check them as done and delete them. A sorting function gives the user the possibility to change the task view between all, done or undone tasks. The tasks will be stored in local storage (after refreshing the page, your data is still there).
