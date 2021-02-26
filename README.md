@@ -15,4 +15,4 @@ As a user, you can add tasks, check them as done and delete them. A sorting func
 
 ## How it works
 
-I started the project by creating a new repository with create-react-app. I installed TailwindCSS by following the description of the official documentation. In Addition to the already existing component App I created a folder called components with three extra components, called Form, ToDo and ToDoList.
+I started the project by creating a new repository with create-react-app. I installed TailwindCSS by following the description of [the official documentation](https://tailwindcss.com/docs/guides/create-react-app). In Addition to the already existing component App I created a folder called components with three extra components, called Form, ToDo and ToDoList.
