@@ -49,8 +49,8 @@ function App() {
   return (
     <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-w-screen min-h-screen text-center box-border">
       <header className="py-12 text-gray-100 font-sans">
-        <h1 className="text-3xl sm:text-6xl">React To Do List</h1>  
-        <h2 className="text-lg sm:text-xl mt-3">styled with TailwindCSS</h2>        
+        <h1 className="text-4xl sm:text-6xl font-react-font">React To Do List</h1>  
+        <h2 className="text-lg sm:text-xl mt-3 font-subheading">styled with TailwindCSS</h2>        
       </header>
       <Form
       input={input}
