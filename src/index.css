@@ -1,4 +1,10 @@
 /* ./src/index.css */
 @tailwind base;
 @tailwind components;
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
 @tailwind utilities;
