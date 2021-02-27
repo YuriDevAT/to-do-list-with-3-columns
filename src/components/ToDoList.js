@@ -6,6 +6,7 @@ const ToDoList = ({ todos, setTodos, filtered }) => {
     return (
         <div className="mt-6 py-2 px-2">
             <ul>
+                <li>
                 {filtered.map((todo) => (
                     <ToDo
                     setTodos={setTodos}
@@ -14,6 +15,7 @@ const ToDoList = ({ todos, setTodos, filtered }) => {
                     todo={todo}
                     text={todo.text} />
                 ))}
+                </li>
             </ul>
         </div>
     );

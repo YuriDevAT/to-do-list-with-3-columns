@@ -23,19 +23,22 @@ const Form = ({ input, setInput, todos, setTodos, setStatus }) => {
                 <input
                 className="py-2 pl-2 border rounded-lg border-transparent focus:outline-none focus:ring-4 focus:ring-blue-700 focus:border-transparent shadow-md"
                 type="text"
+                aria-label="Enter task"
                 value={input}
                 onChange={inputHandler}
                 placeholder="Add to do.." />
                 <button 
                 type="submit"
+                aria-label="add task to list"
                 onClick={submitHandler}
-                className="ml-1 mr-3 my-2 focus:outline-none">
+                className="mx-2 my-2 focus:outline-none">
                     <i 
                     className="fas fa-plus-square text-white text-5xl hover:text-blue-700">
                     </i>
                 </button>        
                 <select
                 onChange={statusHandler}
+                aria-label="select which tasks should be shown"
                 className="py-2 pl-2 rounded-lg shadow-md cursor-pointer focus:outline-none">
                     <option>all</option>
                     <option>completed</option>
