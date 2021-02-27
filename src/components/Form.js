@@ -8,10 +8,14 @@ const Form = ({ input, setInput, todos, setTodos, setStatus }) => {
 
     const submitHandler = (e) => {
         e.preventDefault(); 
+        if (input.length == [0]) {
+            return window.alert("Please enter a task")
+        } else {
         setTodos([
             ...todos, { text: input, completed: false, id: Math.random() * 1000 }
         ]);
         setInput('');
+    }
     }
 
     const statusHandler = (e) => {
@@ -39,7 +43,7 @@ const Form = ({ input, setInput, todos, setTodos, setStatus }) => {
                 <select
                 onChange={statusHandler}
                 aria-label="select which tasks should be shown"
-                className="py-2 pl-2 rounded-lg shadow-md cursor-pointer focus:outline-none">
+                className="py-2 pl-2 rounded-lg shadow-md cursor-pointer focus:outline-none hover:bg-gray-300">
                     <option>all</option>
                     <option>completed</option>
                     <option>uncompleted</option>
