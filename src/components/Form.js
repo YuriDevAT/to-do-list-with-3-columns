@@ -43,7 +43,7 @@ const Form = ({ input, setInput, todos, setTodos, setStatus }) => {
                 <select
                 onChange={statusHandler}
                 aria-label="select which tasks should be shown"
-                className="py-2 pl-2 rounded-lg shadow-md cursor-pointer focus:outline-none"/>
+                className="py-2 pl-2 rounded-lg shadow-md cursor-pointer focus:outline-none">
                     <option>completed</option>
                     <option>uncompleted</option>
                 </select>
