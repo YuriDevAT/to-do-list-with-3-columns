@@ -9,7 +9,7 @@ As a user, you can add tasks, check them as done and delete them. A sorting func
 
 ## Homescreen To Do List
 
-![App screen](https://github.com/YuriDevAT/to-do-list-with-3-columns/blob/master/final-app.png)
+![App screen](https://github.com/YuriDevAT/React-ToDoList/blob/master/final-app.PNG)
 
 ## How it works
 
