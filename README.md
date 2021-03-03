@@ -9,7 +9,7 @@ As a user, you can add tasks, check them as done and delete them. A sorting func
 
 ## Homescreen To Do List
 
-![App screen]()
+![App screen](https://github.com/YuriDevAT/React-ToDoList/blob/master/src/img/final-app.PNG)
 
 ## How it works
 
@@ -21,11 +21,11 @@ Since there is input which also get changed, the hook `useState` will be used. A
 ### Form
 `...todos` means, that when something is in the list/array, just spread it. 
 
-![Spread operator]()
+![Spread operator](https://github.com/YuriDevAT/React-ToDoList/blob/master/src/img/code-spread.PNG)
 
 To use `select` and show "all", or just "completed" / "uncompleted" tasks, two states are needed. The original state should not be touched, instead the filtered state should show its selected todos. `useEffect` is needed here. It allows to run a function every time a piece changes. By adding a value, the function runs again. 
 
 ### ToDoList & ToDo
 `filtered.map` means, that there is access now to each todo: for each todo from the state that exists, it will be rendered out a `todo` component. To be able to delete a taks, every todo has to have an **id** or **unique key**.
 
-![Unique key]()
+![Unique key](https://github.com/YuriDevAT/React-ToDoList/blob/master/src/img/unique%20key.PNG)
