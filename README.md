@@ -29,3 +29,8 @@ To use `select` and show "all", or just "completed" / "uncompleted" tasks, two s
 `filtered.map` means, that there is access now to each todo: for each todo from the state that exists, it will be rendered out a `todo` component. To be able to delete a taks, every todo has to have an **id** or **unique key**.
 
 ![Unique key](https://github.com/YuriDevAT/React-ToDoList/blob/master/src/img/unique%20key.PNG)
+
+## Mentioned links
+* How to install TailwindCSS https://tailwindcss.com/docs/guides/create-react-app
+* How to install npm package "random id" https://www.npmjs.com/package/uuid4/v/2.0.2
+* How to overcome problems when importing npm package https://superuser.com/questions/1559070/module-not-found-cant-resolve-uuid-v4
