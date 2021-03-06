@@ -19,9 +19,9 @@ I started the project by creating a new repository with **create-react-app**. I 
 Since there is input which also get changed, the hook `useState` will be used. All `const` where the hook is used were created in the App component. To get access to all of them, they were passed down in the particular component. Instead of using `props` I add the `const` within `{}` in the function of each component to have immediate access without writing `props`.
 
 ### Form
-`...todos` means, that when something is in the list/array, just spread it. For the random id, I used the following package. https://www.npmjs.com/package/uuid4/v/2.0.2 I case you face problems importing in into your file, check out following tip https://superuser.com/questions/1559070/module-not-found-cant-resolve-uuid-v4
+`...todos` means, that when something is in the list/array, just spread it. For the random id, I used [this package](https://www.npmjs.com/package/uuid4/v/2.0.2). In case you face any problems importing it into your file, check out [this useful tip](https://superuser.com/questions/1559070/module-not-found-cant-resolve-uuid-v4)! 
 
-![Spread operator](https://github.com/YuriDevAT/React-ToDoList/blob/master/src/img/code-spread.PNG)
+![Spread operator](https://github.com/YuriDevAT/React-ToDoList/blob/master/src/img/spread%20operator.PNG)
 
 To use `select` and show "all", or just "completed" / "uncompleted" tasks, two states are needed. The original state should not be touched, instead the filtered state should show its selected todos. `useEffect` is needed here. It allows to run a function every time a piece changes. By adding a value, the function runs again. 
 
@@ -29,3 +29,8 @@ To use `select` and show "all", or just "completed" / "uncompleted" tasks, two s
 `filtered.map` means, that there is access now to each todo: for each todo from the state that exists, it will be rendered out a `todo` component. To be able to delete a taks, every todo has to have an **id** or **unique key**.
 
 ![Unique key](https://github.com/YuriDevAT/React-ToDoList/blob/master/src/img/unique%20key.PNG)
+
+## Mentioned links
+* How to install TailwindCSS https://tailwindcss.com/docs/guides/create-react-app
+* How to install npm package "random id" https://www.npmjs.com/package/uuid4/v/2.0.2
+* How to overcome problems when importing npm package https://superuser.com/questions/1559070/module-not-found-cant-resolve-uuid-v4
