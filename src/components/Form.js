@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Form = ({ input, setInput, todos, setTodos, setStatus }) => {   
 
     const inputHandler = (e) => {
@@ -7,12 +8,13 @@ const Form = ({ input, setInput, todos, setTodos, setStatus }) => {
     }
 
     const submitHandler = (e) => {
+        const { v4: uuidv4 } = require('uuid');
         e.preventDefault(); 
         if (input.length === 0) {
             return window.alert("Please enter a task")
         } else {
         setTodos([
-            ...todos, { text: input, completed: false, id: Math.random() * 1000 }
+            ...todos, { text: input, completed: false, id: uuidv4() }
         ]);
         setInput('');
     }
