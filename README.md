@@ -19,7 +19,7 @@ I started the project by creating a new repository with **create-react-app**. I 
 Since there is input which also get changed, the hook `useState` will be used. All `const` where the hook is used were created in the App component. To get access to all of them, they were passed down in the particular component. Instead of using `props` I add the `const` within `{}` in the function of each component to have immediate access without writing `props`.
 
 ### Form
-`...todos` means, that when something is in the list/array, just spread it. 
+`...todos` means, that when something is in the list/array, just spread it. For the random id, I used the following package. https://www.npmjs.com/package/uuid4/v/2.0.2 I case you face problems importing in into your file, check out following tip https://superuser.com/questions/1559070/module-not-found-cant-resolve-uuid-v4
 
 ![Spread operator](https://github.com/YuriDevAT/React-ToDoList/blob/master/src/img/code-spread.PNG)
 
